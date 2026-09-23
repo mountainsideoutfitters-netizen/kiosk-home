@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Customer Kiosk</title>
+
 <style>
   body {
     margin: 0;
@@ -38,17 +39,30 @@
     border: 4px solid #222;
     text-decoration: none;
     color: #111;
-    font-size: 34px;
-    font-weight: bold;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
     box-shadow: 0 8px 20px rgba(0,0,0,.15);
+    padding: 15px;
+    box-sizing: border-box;
   }
 
   a:active {
     transform: scale(.97);
+  }
+
+  .logo {
+    max-width: 330px;
+    max-height: 145px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+
+  .label {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
   }
 </style>
 </head>
@@ -60,13 +74,19 @@
 
 <div class="buttons">
 
-<a href="https://www.silencershop.com">
-Silencer Shop
-</a>
+  <a href="https://www.silencershop.com">
+    <img class="logo"
+         src="Silencer_Shop_Logo.jpg"
+         alt="Silencer Shop">
+    <div class="label">Silencer Shop</div>
+  </a>
 
-<a href="https://www.mountainsideoutfitters.com">
-Mountainside<br>Outfitters
-</a>
+  <a href="https://www.mountainsideoutfitters.com">
+    <img class="logo"
+         src="Mountainside's Color Logo - Updated 11-09-22.png"
+         alt="Mountainside Outfitters">
+    <div class="label">Mountainside Outfitters</div>
+  </a>
 
 </div>
 
